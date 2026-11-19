@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--low-green);
+}
+
+/* Root File contain all color in website */
+
+:root{
+    --primary-color: #071C17;
+    --secondry-color: #123D32;
+    --primary-green: #059669;
+    --low-green: #34D399;
+    --text: rgb(48, 47, 47);
+     --border: #245344;
+}
+
+/* Main Div Style */
+.header{
+    width: 100%;
+    height: 90px;
+    background-color: var(--primary-green);
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width:380px){
+    .header{
+        display: none;
+    }
+}
+
+/* Main Logo */
+.logo>h2{
+    margin-left: 30px;
+}
+
+/* Links Style start */
+
+.links>ul{
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 50px;
+}
+
+.links>ul>li>a{
+    text-decoration: none;
+    font-size: 20px;
+    /* gap: 40px; */
+}
+
+/* Button Style  */
+.button>button{
+    width: 140px;
+    height: 40px;
+    color: yellowgreen;
+    margin-right: 50px;
+}
+
+.button>button>a{
+    text-decoration: none;
+    font-size: 20px;
+}

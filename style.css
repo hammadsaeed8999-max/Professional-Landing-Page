@@ -11,24 +11,30 @@ body{
 /* Root File contain all color in website */
 
 :root{
-    --primary-color: #071C17;
-    --secondry-color: #123D32;
-    --primary-green: #059669;
-    --low-green: #34D399;
+    --primary-color:  #0F172A;
+    --h1-heading-color:  #F97316;
     --text: rgb(48, 47, 47);
      --border: #245344;
+     --background-color:  #FFFFFF;
+     --electric-blue: #2563EB;
+     --hover: #2563EB;
+     --CTA-button: 	#2563EB;
 }
 
 /* Main Div Style */
 .header{
     width: 100%;
     height: 90px;
-    background-color: var(--primary-green);
+    background-color: var(--background-color);
     justify-content: space-between;
     align-items: center;
     gap: 30px;
     display: flex;
     flex-wrap: wrap;
+}
+
+.header{
+   box-shadow: 1px 10px 3px -10px rgba(0,0,0,0.75);
 }
 
 @media screen and (max-width:380px){
@@ -55,17 +61,185 @@ body{
     text-decoration: none;
     font-size: 20px;
     /* gap: 40px; */
+    color: #334155;
+}
+
+.links>ul>li>a:hover{
+    color: var(--hover);
+}
+
+.links>ul>li>.active{
+    color: #2563EB;
+    font-weight: bold;
 }
 
 /* Button Style  */
 .button>button{
     width: 140px;
     height: 40px;
-    color: yellowgreen;
+    background-color: var(--CTA-button);
     margin-right: 50px;
 }
 
 .button>button>a{
     text-decoration: none;
     font-size: 20px;
+    color: #FFFFFF;
 }
+
+/* HERO SECTION STYLE START */
+.hero-section{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    height: 400px;
+    margin-top: 20px;
+    background-color: var(--primary-color);
+    color: rgb(241, 241, 241);
+}
+
+/* .side-text{
+    border: 2px solid red;
+}
+
+.image0side{
+    border: 2px solid red;
+} */
+
+
+.side-text>h3{
+    font-size: 20px;
+    color: #2563EB;
+    margin-top: 30px;
+    
+}
+
+.side-text>h1{
+    font-size: 60px;
+    color: var(--h1-heading-color);
+    margin-top: 20px;
+}
+
+.side-text>p{
+    text-align: justify;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.image0side>img{
+    width: 400px;
+    height: 400px;
+    margin-left: 100px;
+}
+
+#button2{
+    margin-left: 150px;
+    margin-top: 30px;
+}
+
+.main{
+    background-color: var(--primary-color);
+}
+
+
+@media screen and (max-width: 400px) {
+
+.header{
+    background-color: #F97316;
+    background-color: var(--h1-heading-color);
+    width: 400px;
+    visibility: visible;
+}
+
+
+
+.hero-section{
+    background-color: var(--primary-color);
+    display: inline;
+    height: 300px;
+    margin-top: 20px;
+    color: rgb(253, 253, 253);
+}
+
+.side-text>h3{
+    font-size: 15px;
+    color: #2563EB;
+    margin-top: 30px;
+    
+}
+
+.button{
+    visibility: hidden;
+}
+
+.side-text>h1{
+    font-size: 25px;
+    color: var(--h1-heading-color);
+    margin-top: 20px;
+    margin-right: 50px;
+
+}
+
+.side-text>p{
+    text-align: justify;
+    font-size: 10px;
+    line-height: 30px;
+    margin-right: 50px
+}
+
+.side-text{
+     width: 400px;
+}
+
+.image0side{
+    width: 400px;
+}
+
+
+.image0side>img{
+    width: 400px;
+    margin-right: 50px;
+    position: absolute;
+    right: -70px;
+}
+
+
+.links>ul{
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+}
+
+.links>ul>li>a{
+    text-decoration: none;
+    font-size: 20px;
+    /* gap: 40px; */
+    color: #334155;
+}
+
+#button2{
+    visibility: visible;
+    position: absolute;
+    right: 90px;
+    display: flex;
+    top: 730px;
+}
+
+#button2>button{
+    margin-top: 20px;
+    width: 80px;
+   margin-left: -15px;
+   border-radius: 20px;
+}
+
+#button2>button>a{
+    font-size: 14px
+}
+
+#hide{
+    visibility: hidden
+}
+
+
+};
+/* HERO SECTION STYLE END */

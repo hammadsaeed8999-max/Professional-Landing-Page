@@ -142,3 +142,43 @@ window.addEventListener("resize", () => {
 // Initialize
 createDots();
 updateSlider();
+
+
+/* =========================
+   CURRENT YEAR
+========================= */
+
+const currentYear = document.getElementById("currentYear");
+
+currentYear.textContent = new Date().getFullYear();
+
+
+/* =========================
+   BACK TO TOP BUTTON
+========================= */
+
+const backToTop = document.getElementById("backToTop");
+
+// Show button on scroll
+
+window.addEventListener("scroll", function () {
+
+    if (window.scrollY > 300) {
+        backToTop.style.display = "flex";
+    } else {
+        backToTop.style.display = "none";
+    }
+
+});
+
+// Scroll to top on click
+
+backToTop.addEventListener("click", function () {
+
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+
+});
+
